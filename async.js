@@ -8,7 +8,7 @@ function runParallel(jobs, parallelNum, timeout = 1000) {
         let numberOfJob = 0;
         let results = [];
         if (jobs.length === 0) {
-            resolve(results);
+            resolve([]);
         }
         for (let count = 0; count < parallelNum; count++) {
             numberOfJob += 1;
